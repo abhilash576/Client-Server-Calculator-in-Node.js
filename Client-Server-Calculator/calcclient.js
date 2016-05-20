@@ -12,7 +12,6 @@ sock.on('close', function() {
     console.log('Connection closed');});
 
 var connection = sock.connect(3000);
-
 connection.on('error', function() {
     console.log('Error connecting to server');
 });
