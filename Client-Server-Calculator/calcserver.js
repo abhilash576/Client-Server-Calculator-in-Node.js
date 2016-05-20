@@ -16,7 +16,6 @@ net.createServer(function (sock) {
     console.log("Incoming connection accepted");
 
     sock.on('data', function (d) {
-
         var query = new String(d);
         var pair = query.split(" ");
         var cltid = pair[0];
