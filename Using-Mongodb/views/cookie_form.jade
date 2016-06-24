@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+    html
+        head
+            title
+        body
+
+            form(action='/cookie_ctlr', method='post')
+                fieldset
+                    legend Personal information:
+                    |         First Name:
+                    input(type='text', name='firstname', required='')
+                    |         Last Name:
+                    input(type='text', name='lastname', required='')
+                    br
+                br
+                input(type='submit', value='Submit')

@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+  html
+    head
+      title Insert title here
+    body
+      form(action='#{saction}', method='post')
+        |         #{fname}
+        input(type='#{fvar}', name='firstname', value='#{fval}', required='')
+        br
+        |         #{lname}
+        input(type='#{lvar}', name='lastname', value='#{lval}', required='')
+        br
+        |     #{pname}
+        input(type='#{pvar}', name='languages', value='#{pval}', textarea='', rows='4', cols='50', required='')
+        br
+        br
+        |     #{dname}
+        input(type='#{dvar}', name='days', value='#{dval}', textarea='', rows='4', cols='50', required='')
+        br
+        br
+        |     #{ename}
+        input(type='#{evar}', name='email', value='#{eval}', required='')
+        br
+        br
+        input(type='#{submitvar}', value='#{sval}')
+        br
+      form(action='#{paction}', method='post')
+        br
+        input(type='#{previousvar}', value='Previous')
+      form(action='#{caction}', method='post')
+        br
+        input(type='#{cancelvar}', value='Cancel')

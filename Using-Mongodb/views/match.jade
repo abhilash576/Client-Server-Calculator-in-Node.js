@@ -1,0 +1,11 @@
+doctype html
+html(lang='en')
+    html
+        head
+            title
+        body
+            h1 #{title}
+            each itm in message
+                each i, index in itm
+                    div= index + ": " + i
+                br
